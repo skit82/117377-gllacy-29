@@ -71,7 +71,7 @@
             </a>
           </li>
           <li class="user-navigation__item basket">
-            <a class="basket__link" href="">
+            <a class="basket__link basket__link--number" href="">
               2 товара
             </a>
           </li>
@@ -114,7 +114,7 @@
       </h2>
       <form class="filter__box form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset sorting">
-          <legend>Сортировка</legend>
+          <legend class="sorting__name">Сортировка</legend>
           <select class="sorting__select" name="popularity">
             <option value="по полуряности">по полуряности</option>
             <option value="сначало недорогие">сначало недорогие</option>
@@ -142,7 +142,7 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset fat">
-          <legend>Жирность:</legend>
+          <legend class="fat__name">Жирность:</legend>
           <div class="fat__inner">
             <input class="visually-hidden fat__input" id="zer-field" type="radio" name="fat" value="0%">
               <label for="zer-field">
@@ -159,7 +159,7 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset filler">
-          <legend>Наполнители:</legend>
+          <legend class="filler__name">Наполнители:</legend>
           <div class="filler__inner">
             <input class="visually-hidden filler__input" type="checkbox" name="filler-cocoa" id="filler-field" checked>
             <label for="filler-field">
@@ -200,7 +200,7 @@
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -215,7 +215,7 @@
               Сливочно-кофейное с кусочками шоколада
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -230,7 +230,7 @@
               Сливочно-клубничное с присыпкой из белого шоколада
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -260,7 +260,7 @@
               Сливочное с брусничным джемом
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -275,7 +275,7 @@
               Сливочно-черничное с цельными ягодами черники
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -290,7 +290,7 @@
               Сливочно-лимонное с карамельной присыпкой
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -305,7 +305,7 @@
               Сливочное с шоколадной стружкой
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -320,7 +320,7 @@
               Сливочно-ванильное с кусочками шоколада
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -335,7 +335,7 @@
               Сливочное с ментоловым сиропом
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -350,7 +350,7 @@
               Сливочное с кусочками черного шоколада
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -365,7 +365,7 @@
               Сливочное с мятным сиропом
             </a>
           </h3>
-          <a class="product__button" href="#">
+          <a class="product__button button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -376,7 +376,7 @@
         <li class="pagination__item prev">
           <p class="prev__icon"></p>
         </li>
-        <li class="pagination__item pagination__item--current">
+        <li class="pagination__item-active">
           <button>1</button>
         </li>
         <li class="pagination__item">
@@ -425,7 +425,7 @@
     <section class="about-us">
       <ul class="about-us__list">
         <li class="about-us__item">
-          <a class="about-us__text" href="#">
+          <a class="about-us__text about-us__text--vendor" href="#">
             Для поставщиков
           </a>
         </li>
