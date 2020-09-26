@@ -32,6 +32,14 @@
   --basic-purple: #ac1000;
   --basic-dark-red: #942718;
   --basic-grey-green: #849d8f;
+
+  --basic-shadow-purple: rgba(172, 16, 0, 0.64);
+  --basic-shadow-dark: rgba(49, 50, 53, 0.5);
+  --basic-bg-white: rgba(255, 255, 255, 0.2);
+
+  --basic-inset-purple: rgba(172, 16, 0, 1);
+  --basic-gd-black: rgba(0, 0, 0, 0.07);
+  --basic-bd-grey: rgba(178, 178, 178, 0.52);
 }
 
 a {
@@ -69,7 +77,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   background: linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
-  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+  box-shadow: 0px 2px 2px var(--basic-shadow-purple);
   border-radius: 70px;
 }
 
@@ -152,12 +160,12 @@ body {
   cursor: pointer;
 }
 .slider__btn:focus, .slider__btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
+  background: linear-gradient(0deg, var(--basic-bg-white), var(--basic-bg-white)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
   box-shadow: 0px 2px 2px var(--basic-purple);
 }
 .slider__btn:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
-  box-shadow: inset 0px 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(0deg, var(--basic-gd-black), var(--basic-gd-black)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
+  box-shadow: inset 0px 2px 2px var(--basic-inset-purple);
 }
 
 .banner__list {
@@ -189,13 +197,13 @@ body {
   color: var(--basic-white);
 }
 .banner__link:focus, .banner__link:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
+  background: linear-gradient(0deg, var(--basic-bg-white), var(--basic-bg-white)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
   box-shadow: 0px 1px 2px var(--basic-purple);
   border-radius: 26px;
 }
 .banner__link:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
-  box-shadow: inset 0px 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(0deg, var(--basic-gd-black), var(--basic-gd-black)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
+  box-shadow: inset 0px 2px 2px var(--basic-inset-purple);
   border-radius: 26px;
 }
 
@@ -227,13 +235,13 @@ body {
   color: var(--basic-white);
 }
 .product__button:focus, .product__button:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
+  background: linear-gradient(0deg, var(--basic-bg-white), var(--basic-bg-white)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
   box-shadow: 0px 1px 2px var(--basic-purple);
   border-radius: 26px;
 }
 .product__button:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
-  box-shadow: inset 0px 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(0deg, var(--basic-gd-black), var(--basic-gd-black)), linear-gradient(180deg, var(--basic-scarlet)  0%, var(--basic-orange) 100%);
+  box-shadow: inset 0px 2px 2px var(--basic-inset-purple);
   border-radius: 26px;
 }
 .product__price {
@@ -241,14 +249,14 @@ body {
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-white);
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0px 1px 3px var(--basic-shadow-dark);
 }
 .product__kg {
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
   color: var(--basic-white);
-  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+  text-shadow: 0px 1px 3px var(--basic-shadow-dark);
 }
 
 .promo__list {
@@ -299,7 +307,7 @@ body {
   width: 368px;
   height: 45px;
   background: var(--basic-white);
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--basic-bd-grey);
   box-sizing: border-box;
   border-radius: 6px;
 }
@@ -316,7 +324,7 @@ body {
 }
 .message__form input:hover {
   background: var(--basic-white);
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  border: 2px solid var(--basic-bd-grey);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -334,13 +342,13 @@ body {
   outline: none;
 }
 .message__btn:focus, .message__btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
+  background: linear-gradient(0deg, var(--basic-bg-white), var(--basic-bg-white)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
   box-shadow: 0px 1px 2px var(--basic-purple);
   border-radius: 26px;
 }
 .message__btn:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
-  box-shadow: inset 0px 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(0deg, var(--basic-gd-black), var(--basic-gd-black)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
+  box-shadow: inset 0px 2px 2px var(--basic-inset-purple);
   border-radius: 26px;
 }
 
@@ -372,13 +380,13 @@ body {
   outline: none;
 }
 .address__btn:focus, .address__btn:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
+  background: linear-gradient(0deg, var(--basic-bg-white), var(--basic-bg-white)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
   box-shadow: 0px 1px 2px var(--basic-purple);
   border-radius: 26px;
 }
 .address__btn:active {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
-  box-shadow: inset 0px 2px 2px rgba(172, 16, 0, 1);
+  background: linear-gradient(0deg, var(--basic-gd-black), var(--basic-gd-black)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
+  box-shadow: inset 0px 2px 2px var(--basic-inset-purple);
   border-radius: 26px;
 }
 
@@ -460,7 +468,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--basic-bg-white);
   outline: none;
   cursor: pointer;
   border: none;
@@ -489,13 +497,13 @@ body {
 .fat__inner {
   width: 425px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--basic-bg-white);
   border-radius: 20px;
 }
 .filler__inner {
   width: 711px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--basic-bg-white);
   border-radius: 20px;
 }
 .filler__inner label {
@@ -507,11 +515,12 @@ body {
 .form__button {
   width: 144px;
   height: 36px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--basic-bg-white);
   border: 2px solid var(--basic-white);
   border-radius: 20px;
   cursor: pointer;
@@ -548,6 +557,7 @@ body {
   width: 26px;
   height: 26px;
   padding: 0px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -559,6 +569,6 @@ body {
 }
 .pagination__item button:focus,
 .pagination__item button:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--basic-bg-white);
   cursor: pointer;
 }
