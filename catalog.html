@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Каталог Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="page-header">
+<body class="page-body">
+  <div class="container">
+    <header class="page-header">
     <div class="page-header__wrapper">
       <a href="index.html" class="page-header__logo">
          <img src="img/icon-logo.svg" width="154" height="64" alt="Логотип" class="page-header__img">
@@ -94,7 +95,8 @@
         8 812 450-25-25
       </a>
     </div>
-  </header>
+    </header>
+  </div>
   <main>
     <section class="breadcrumbs">
       <ul class="breadcrumbs__list">
@@ -404,8 +406,9 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
-    <section class="social">
+  <footer class="page-footer container">
+    <div class="page-footer__wrraper">
+      <section class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="#">
@@ -445,8 +448,8 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="about-us">
+      </section>
+      <section class="about-us">
       <ul class="about-us__list">
         <li class="about-us__item">
           <a class="about-us__text about-us__text--vendor" href="#">
@@ -469,13 +472,14 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="copyright">
+      </section>
+      <section class="copyright">
       <img src="img/logo-htmlacademy.svg" width="108" height="38" alt="Логотип Htmlacademy">
       <p class="copyright__text">
         Сделано в <a href="https://htmlacademy.ru">HTML academy</a> &copy; 2017
       </p>
-    </section>
+      </section>
+    </div>
   </footer>
 </body>
 </html>

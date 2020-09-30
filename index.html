@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="page-header">
+<body class="page-body">
+  <div class="container">
+    <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <img src="img/icon-logo.svg" width="154" height="64" alt="Логотип" class="page-header__img">
@@ -94,12 +95,14 @@
         8 812 450-25-25
       </a>
     </div>
-  </header>
+    </header>
+  </div>
   <main>
-    <h1 class="visually-hidden">
-      Мороженное - «Глейси»
-    </h1>
-    <section class="slider">
+    <div class="container">
+      <h1 class="visually-hidden">
+        Мороженное - «Глейси»
+      </h1>
+      <section class="slider">
       <ul class="slider__list">
         <li class="slider__item">
           <h2 class="slider__title">
@@ -129,10 +132,10 @@
       <div class="slider__controls">
 
       </div>
-    </section>
-    <section class="banner">
+      </section>
+      <section class="banner">
       <ul class="banner__list">
-        <li class="banner__item">
+        <li class="banner__item banner__item--raspberry">
           <h2 class="banner__title">
             Малинка даром!
           </h2>
@@ -143,7 +146,7 @@
             Хочу варенье!
           </a>
         </li>
-        <li class="banner__item">
+        <li class="banner__item banner__item--chocolate">
           <h2 class="banner__title">
             Шоколадки даром!
           </h2>
@@ -155,8 +158,8 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="catalog">
+      </section>
+      <section class="catalog">
       <h2 class="visually-hidden">Каталог мороженого</h2>
       <ul class="catalog__list">
         <li class="catalog__item product">
@@ -224,35 +227,35 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="promo">
+      </section>
+      <section class="promo">
       <h2 class="promo__title">
         Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на разнавес
       </h2>
       <ul class="promo__list">
-        <li class="promo__item">
+        <li class="promo__item promo__item--ice">
           <p class="promo__text">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </p>
         </li>
-        <li class="promo__item">
+        <li class="promo__item promo__item--cow">
           <p class="promo__text">
             Закупка игредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </p>
         </li>
-        <li class="promo__item">
+        <li class="promo__item promo__item--eco">
           <p class="promo__text">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального экологически чистого сырья.
           </p>
         </li>
-        <li class="promo__item">
+        <li class="promo__item promo__item--thermometer">
           <p class="promo__text">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </p>
         </li>
       </ul>
-    </section>
-    <section class="info">
+      </section>
+      <section class="info">
       <div class="info__wrapper">
         <article class="blog">
           <h2 class="blog__title">
@@ -268,24 +271,27 @@
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды.Честно =)
             </p>
             <form class="message__form" action="" method="">
-              <label class="label-field label-field-mail-list" for="mail-field">Электронная почта</label>
-              <input type="email" name="mail" id="main-field" placeholder="Электронная почта">
+              <label class="message__label">Электронная почта
+              <input type="email" name="mail" placeholder="Электронная почта">
+            </label>
               <button class="message__btn button" type="submit">Отправить</button>
             </form>
           </div>
         </section>
       </div>
-    </section>
+      </section>
+    </div>
     <section class="address">
-      <div class="address__box">
+      <div class="address__wrraper">
+        <div class="address__box">
         <p class="adress__text">
           Адресс главного офиса и офлайн магазина:
         </p>
         <b class="adress__name">
           ул. Большая Конюшенная 19/8, Санкт-Петербург
         </b>
-      </div>
-      <div class="address__box">
+        </div>
+        <div class="address__box">
         <p class="adress__text">
           Для заказов по телефону:
         </p>
@@ -295,14 +301,16 @@
         <p class="adress__text">
           (с 10 до 20 ежедневно)
         </p>
+        </div>
+        <button class="address__btn button">
+          Форма обратной связи
+        </button>
       </div>
-      <button class="address__btn button">
-        Форма обратной связи
-      </button>
     </section>
   </main>
-  <footer class="page-footer">
-    <section class="social">
+  <footer class="page-footer container">
+    <div class="page-footer__wrraper">
+      <section class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="#">
@@ -342,8 +350,8 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="about-us">
+      </section>
+      <section class="about-us">
       <ul class="about-us__list">
         <li class="about-us__item">
           <a class="about-us__text about-us__text--vendor" href="#">
@@ -366,13 +374,14 @@
           </a>
         </li>
       </ul>
-    </section>
-    <section class="copyright">
+      </section>
+      <section class="copyright">
       <img src="img/logo-htmlacademy.svg" width="108" height="38" alt="Логотип Htmlacademy">
       <p class="copyright__text">
         Сделано в <a href="https://htmlacademy.ru">HTML academy</a> &copy; 2017
       </p>
-    </section>
+      </section>
+    </div>
   </footer>
 </body>
 </html>
