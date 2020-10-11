@@ -67,27 +67,27 @@
               </svg>
             </a>
             <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-              <label for="search-field"></label>
-              <input class="search__input" type="text" name="search" id="search-field" placeholder="Что ищем?">
-              <button class="search__btn" type="submit">
-              </button>
+              <input class="search__input" type="search" name="search" id="search-field" placeholder="Что ищем?">
+              <label class="visually-hidden" for="search-field"></label>
             </form>
           </li>
           <li class="user-navigation__item login">
             <a class="login__link" href="">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#ffffff"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" fill="#ffffff"><g><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
               Вход
             </a>
             <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
-                <label for="email-field"></label>
-                <input class="login__input" type="text" name="email" id="email-field" placeholder="Электронная почта">
-                <label for="password-field"></label>
-                <input class="login__input" type="password" name="password" id="password-field" placeholder="Пароль">
+                <label class="visually-hidden" for="email-field"></label>
+                <input class="login__input" type="email" name="email" id="email-field" placeholder="email@example.com">
+                <label class="visually-hidden" for="password-field"></label>
+                <input class="login__input" type="password" name="password" id="password-field" placeholder="******">
+                <div class="login__footer">
                   <button class="button login__btn" type="submit" value="Войти">Войти</button>
-                  <p class="login__footer">
+                  <p class="login__descr">
                     <a href="#">Забыли пароль?</a>
                     <a href="#">Новая регистрация</a>
                   </p>
+                </div>
               </form>
           </li>
           <li class="user-navigation__item basket">
@@ -104,7 +104,7 @@
     </div>
     <div class="page-header__footer">
       <p class="page-header__footer-time">
-        С 10 до 20, ежедневно
+        с 10 до 20, ежедневно
       </p>
       <span class="visually-hidden">Телефон для заказов:</span>
       <a class="page-header__footer-phone" href="tel:+78124502525">
@@ -121,6 +121,7 @@
       <section class="slider">
       <ul class="slider__list">
         <li class="slider__item">
+          <img src="img/ice-one-sl.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
           <h2 class="slider__title">
             Крем-брюле и пломбир с малиновым джемом
           </h2>
@@ -129,6 +130,7 @@
           </button>
         </li>
         <li class="slider__item">
+          <img src="img/ice-two-sl.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
           <h2 class="slider__title">
             Шоколадный пломбир и лимонный сорбет
           </h2>
@@ -137,6 +139,7 @@
           </button>
         </li>
         <li class="slider__item">
+          <img src="img/ice-three-sl.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
           <h2 class="slider__title">
             Пломбир с помадкой и клубничный щербет
           </h2>
@@ -146,7 +149,9 @@
         </li>
       </ul>
       <div class="slider__controls">
-
+        <button class="slider__controls-btn slider-control-active" type="button"><span class="visually-hidden">Первый слайд</span></button>
+        <button class="slider__controls-btn" type="button"><span class="visually-hidden">Второй слайд</span></button>
+        <button class="slider__controls-btn" type="button"><span class="visually-hidden">Третий слайд</span></button>
       </div>
       </section>
       <section class="banner">
@@ -278,18 +283,23 @@
             Новое в нашем блоге
           </h2>
           <a class="blog__link" href="">
-            10 способов сервировки фруктовых щербетов к столу
+            <span>
+              10 способов сервировки фруктовых щербетов к столу
+            </span>
           </a>
         </article>
         <section class="message">
+          <h2 class="visually-hidden">
+            Рассылка
+          </h2>
           <div class="message__card">
             <p class="message__text">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды.Честно =)
             </p>
             <form class="message__form" action="" method="">
-              <label class="message__label">Электронная почта
-              <input type="email" name="mail" placeholder="Электронная почта">
-            </label>
+              <label class="message__label visually-hidden" for="email-field">Электронная почта
+              </label>
+              <input type="email" name="mail" placeholder="email@example.com" id="email-field">
               <button class="message__btn button" type="submit">Отправить</button>
             </form>
           </div>
@@ -300,18 +310,18 @@
     <section class="address">
       <div class="address__wrraper">
         <div class="address__box">
-        <p class="adress__text">
-          Адресс главного офиса и офлайн магазина:
-        </p>
-        <b class="adress__name">
-          ул. Большая Конюшенная 19/8, Санкт-Петербург
-        </b>
+          <p class="adress__text adress__text--shop">
+            Адресс главного офиса и офлайн магазина:
+          </p>
+          <b class="adress__name">
+            ул. Большая Конюшенная, 19/8, Санкт-Петербург
+          </b>
         </div>
-        <div class="address__box">
+        <div class="address__box address__box--contact">
         <p class="adress__text">
           Для заказов по телефону:
         </p>
-        <b class="adress__name">
+        <b class="adress__name adress__name--phone">
           8 812 450-25-25
         </b>
         <p class="adress__text">
