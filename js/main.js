@@ -1,8 +1,4 @@
-var controls = document.querySelectorAll(".slider__controls"),
-var slides = document.querySelectorAll(".slider__item"),
-var backgroundColors = ["#849d8f", "#8996a6", "#9d8b84"],
-var previousSlide = (0, currentSlide = 0, currentColor = 0, i = 0; i < controls.length; i++);
-
+for (var controls = document.querySelectorAll(".slider__controls-btn"), slides = document.querySelectorAll(".slider__item"), backgroundColors = ["#849d8f", "#8996a6", "#9d8b84"], previousSlide = 0, currentSlide = 0, currentColor = 0, i = 0; i < controls.length; i++)
 !function(e) {
   controls[e].addEventListener("click", function() {
   previousSlide = currentSlide,
@@ -23,13 +19,13 @@ var changeActiveSlide = function() {
 
 function init () {
   var myMap = new ymaps.Map('map', {
-    center: [59.939631, 30.333055],
-    zoom: 15
+    center: [59.939228, 30.329364],
+    zoom: 16
   }, {
     searchControlProvider: 'yandex#search'
   }),
 
-  myPlacemark = new ymaps.Placemark([59.939631, 30.333055], {
+  myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
     hintContent: "Магазин Глейси"
   }, {
     iconLayout: 'default#image',

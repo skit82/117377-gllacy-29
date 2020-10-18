@@ -37,6 +37,7 @@
   --basic-shadow-purple: rgba(172, 16, 0, 0.64);
   --basic-shadow-dark: rgba(49, 50, 53, 0.5);
   --basic-bg-white: rgba(255, 255, 255, 0.2);
+  --basic-bg-white-grey: rgba(255, 255, 255, 0.4);
   --basic-bg-white-dark: rgba(255, 255, 255, 0.5);
   --basic-bg-white-op: rgba(255, 255, 255, 0.7);
   --basic-br-dark: rgba(50, 50, 50, 0.2);
@@ -171,10 +172,10 @@ body {
 
 .user-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
-  max-width: 262px;
-  width: 100%;
+  /*max-width: 262px;*/
+  /*width: 100%;*/
   margin-top: 14px;
 }
 .page-header__footer {
@@ -264,6 +265,7 @@ body {
 }
 .user-navigation__item {
   position: relative;
+  margin-left: 10px;
 }
 .search__link {
   position: relative;
@@ -662,6 +664,17 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+}
+.slider__control-active {
+  background-color: var(--basic-white);
+}
+.slider__controls-btn:not(.slider__control-active):hover,
+.slider__controls-btn:not(.slider__control-active):focus {
+  background-color: var(--basic-bg-white-grey);
+}
+
+.slider__controls-btn:active {
+  background-color: var(--basic-white);
 }
 .slider__btn:focus, .slider__btn:hover {
   background: linear-gradient(0deg, var(--basic-bg-white), var(--basic-bg-white)), linear-gradient(180deg, var(--basic-scarlet) 0%, var(--basic-orange) 100%);
@@ -1323,7 +1336,7 @@ body {
   flex-wrap: wrap;
 }
 .filter {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 .form__fieldset {
   border: none;
