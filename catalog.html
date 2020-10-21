@@ -26,12 +26,12 @@
                 </a>
               </li>
               <li class="subsection-catalog__item">
-                <a class="subsection-catalog__link" href="#">
+                <a class="subsection-catalog__link subsection-catalog__link--current" href="#">
                   Сливочное
                 </a>
               </li>
               <li class="subsection-catalog__item">
-                <a class="subsection-catalog__link subsection-catalog__link--current" href="#">
+                <a class="subsection-catalog__link" href="#">
                   Щербеты
                 </a>
               </li>
@@ -193,11 +193,11 @@
           <div class="cost__controls">
             <label class="cost__min-price">
               Цена:
-              <input type="text" value="100"> ₽
+              <input type="text" value="100">₽
             </label>
             <label class="cost__max-price">
               –
-              <input type="text" value="500"> ₽
+              <input type="text" value="500">₽
             </label>
           </div>
           <div class="cost__range-control">
@@ -261,7 +261,7 @@
           <legend class="filler__name">Наполнители:</legend>
           <div class="filler__inner">
             <input class="visually-hidden filler__input" type="checkbox" name="filler-cocoa" id="filler-field-cocoa" checked>
-            <label for="filler-field-cocoa">
+            <label class="filler__cocoa" for="filler-field-cocoa">
               <svg class="filler__off" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3913 1.73913C17.6219 1.73913 17.8431 1.83074 18.0062 1.99382C18.1693 2.1569 18.2609 2.37807 18.2609 2.6087V17.3913C18.2609 17.6219 18.1693 17.8431 18.0062 18.0062C17.8431 18.1693 17.6219 18.2609 17.3913 18.2609H2.6087C2.37807 18.2609 2.1569 18.1693 1.99382 18.0062C1.83074 17.8431 1.73913 17.6219 1.73913 17.3913V2.6087C1.73913 2.37807 1.83074 2.1569 1.99382 1.99382C2.1569 1.83074 2.37807 1.73913 2.6087 1.73913H17.3913ZM17.3913 0H2.6087C1.91683 0 1.25329 0.274844 0.764069 0.764069C0.274844 1.25329 0 1.91683 0 2.6087L0 17.3913C0 18.0832 0.274844 18.7467 0.764069 19.2359C1.25329 19.7252 1.91683 20 2.6087 20H17.3913C18.0832 20 18.7467 19.7252 19.2359 19.2359C19.7252 18.7467 20 18.0832 20 17.3913V2.6087C20 1.91683 19.7252 1.25329 19.2359 0.764069C18.7467 0.274844 18.0832 0 17.3913 0V0Z" fill="white" fill-opacity="0.8"/>
               </svg>
@@ -272,7 +272,7 @@
               шоколадные
             </label>
             <input class="visually-hidden filler__input" type="checkbox" name="filler-sugar" id="filler-field-sugar" checked>
-            <label for="filler-field-sugar">
+            <label class="filler__sugar" for="filler-field-sugar">
               <svg class="filler__off"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3913 1.73913C17.6219 1.73913 17.8431 1.83074 18.0062 1.99382C18.1693 2.1569 18.2609 2.37807 18.2609 2.6087V17.3913C18.2609 17.6219 18.1693 17.8431 18.0062 18.0062C17.8431 18.1693 17.6219 18.2609 17.3913 18.2609H2.6087C2.37807 18.2609 2.1569 18.1693 1.99382 18.0062C1.83074 17.8431 1.73913 17.6219 1.73913 17.3913V2.6087C1.73913 2.37807 1.83074 2.1569 1.99382 1.99382C2.1569 1.83074 2.37807 1.73913 2.6087 1.73913H17.3913ZM17.3913 0H2.6087C1.91683 0 1.25329 0.274844 0.764069 0.764069C0.274844 1.25329 0 1.91683 0 2.6087L0 17.3913C0 18.0832 0.274844 18.7467 0.764069 19.2359C1.25329 19.7252 1.91683 20 2.6087 20H17.3913C18.0832 20 18.7467 19.7252 19.2359 19.2359C19.7252 18.7467 20 18.0832 20 17.3913V2.6087C20 1.91683 19.7252 1.25329 19.2359 0.764069C18.7467 0.274844 18.0832 0 17.3913 0V0Z" fill="white" fill-opacity="0.8"/>
               </svg>
@@ -283,7 +283,7 @@
               сахарные присыпки
             </label>
             <input class="visually-hidden filler__input" type="checkbox" name="filler-fruit" id="filler-field-fruit">
-            <label for="filler-field-fruit">
+            <label class="filler__fruit" for="filler-field-fruit">
               <svg class="filler__off"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3913 1.73913C17.6219 1.73913 17.8431 1.83074 18.0062 1.99382C18.1693 2.1569 18.2609 2.37807 18.2609 2.6087V17.3913C18.2609 17.6219 18.1693 17.8431 18.0062 18.0062C17.8431 18.1693 17.6219 18.2609 17.3913 18.2609H2.6087C2.37807 18.2609 2.1569 18.1693 1.99382 18.0062C1.83074 17.8431 1.73913 17.6219 1.73913 17.3913V2.6087C1.73913 2.37807 1.83074 2.1569 1.99382 1.99382C2.1569 1.83074 2.37807 1.73913 2.6087 1.73913H17.3913ZM17.3913 0H2.6087C1.91683 0 1.25329 0.274844 0.764069 0.764069C0.274844 1.25329 0 1.91683 0 2.6087L0 17.3913C0 18.0832 0.274844 18.7467 0.764069 19.2359C1.25329 19.7252 1.91683 20 2.6087 20H17.3913C18.0832 20 18.7467 19.7252 19.2359 19.2359C19.7252 18.7467 20 18.0832 20 17.3913V2.6087C20 1.91683 19.7252 1.25329 19.2359 0.764069C18.7467 0.274844 18.0832 0 17.3913 0V0Z" fill="white" fill-opacity="0.8"/>
               </svg>
@@ -293,8 +293,8 @@
               </svg>
               фрукты
             </label>
-            <input class="visually-hidden filler__input" type="checkbox" name="filler-cocoa" id="filler-field">
-            <label for="filler-field">
+            <input class="visually-hidden filler__input" type="checkbox" name="filler-syrups" id="filler-field-syrups">
+            <label class="filler__syrups" for="filler-field-syrups">
               <svg class="filler__off"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3913 1.73913C17.6219 1.73913 17.8431 1.83074 18.0062 1.99382C18.1693 2.1569 18.2609 2.37807 18.2609 2.6087V17.3913C18.2609 17.6219 18.1693 17.8431 18.0062 18.0062C17.8431 18.1693 17.6219 18.2609 17.3913 18.2609H2.6087C2.37807 18.2609 2.1569 18.1693 1.99382 18.0062C1.83074 17.8431 1.73913 17.6219 1.73913 17.3913V2.6087C1.73913 2.37807 1.83074 2.1569 1.99382 1.99382C2.1569 1.83074 2.37807 1.73913 2.6087 1.73913H17.3913ZM17.3913 0H2.6087C1.91683 0 1.25329 0.274844 0.764069 0.764069C0.274844 1.25329 0 1.91683 0 2.6087L0 17.3913C0 18.0832 0.274844 18.7467 0.764069 19.2359C1.25329 19.7252 1.91683 20 2.6087 20H17.3913C18.0832 20 18.7467 19.7252 19.2359 19.2359C19.7252 18.7467 20 18.0832 20 17.3913V2.6087C20 1.91683 19.7252 1.25329 19.2359 0.764069C18.7467 0.274844 18.0832 0 17.3913 0V0Z" fill="white" fill-opacity="0.8"/>
               </svg>
@@ -304,8 +304,8 @@
               </svg>
               сиропы
             </label>
-            <input class="visually-hidden filler__input" type="checkbox" name="filler-syrups" id="filler-field-syrups">
-            <label for="filler-field-syrups">
+            <input class="visually-hidden filler__input" type="checkbox" name="filler-jams" id="filler-field-jams">
+            <label class="filler__jams" for="filler-field-jams">
               <svg class="filler__off"  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.3913 1.73913C17.6219 1.73913 17.8431 1.83074 18.0062 1.99382C18.1693 2.1569 18.2609 2.37807 18.2609 2.6087V17.3913C18.2609 17.6219 18.1693 17.8431 18.0062 18.0062C17.8431 18.1693 17.6219 18.2609 17.3913 18.2609H2.6087C2.37807 18.2609 2.1569 18.1693 1.99382 18.0062C1.83074 17.8431 1.73913 17.6219 1.73913 17.3913V2.6087C1.73913 2.37807 1.83074 2.1569 1.99382 1.99382C2.1569 1.83074 2.37807 1.73913 2.6087 1.73913H17.3913ZM17.3913 0H2.6087C1.91683 0 1.25329 0.274844 0.764069 0.764069C0.274844 1.25329 0 1.91683 0 2.6087L0 17.3913C0 18.0832 0.274844 18.7467 0.764069 19.2359C1.25329 19.7252 1.91683 20 2.6087 20H17.3913C18.0832 20 18.7467 19.7252 19.2359 19.2359C19.7252 18.7467 20 18.0832 20 17.3913V2.6087C20 1.91683 19.7252 1.25329 19.2359 0.764069C18.7467 0.274844 18.0832 0 17.3913 0V0Z" fill="white" fill-opacity="0.8"/>
               </svg>
@@ -329,12 +329,12 @@
           <p class="product__price">
             310<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -344,12 +344,12 @@
           <p class="product__price">
             380<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочно-кофейное с кусочками шоколада
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -359,12 +359,12 @@
           <p class="product__price">
             355<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочно-клубничное с присыпкой из белого шоколада
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -374,12 +374,12 @@
           <p class="product__price">
             415<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное крем-брюле с карамельное подливкой
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -389,12 +389,12 @@
           <p class="product__price">
             325<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное с брусничным джемом
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -404,12 +404,12 @@
           <p class="product__price">
             410<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочно-черничное с цельными ягодами черники
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -419,12 +419,12 @@
           <p class="product__price">
             315<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочно-лимонное с карамельной присыпкой
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -434,12 +434,12 @@
           <p class="product__price">
             320<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное с шоколадной стружкой
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -449,12 +449,12 @@
           <p class="product__price">
             440<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочно-ванильное с кусочками шоколада
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -464,12 +464,12 @@
           <p class="product__price">
             435<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное с ментоловым сиропом
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -479,12 +479,12 @@
           <p class="product__price">
             355<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное с кусочками черного шоколада
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -494,12 +494,12 @@
           <p class="product__price">
             420<span class="product__kg">/кг</span>
           </p>
-          <h3 class="product__title">
+          <h3 class="product__title product__title--catalog">
             <a class="product__link" href="#">
               Сливочное с мятным сиропом
             </a>
           </h3>
-          <a class="product__button button" href="#">
+          <a class="product__button product__button--catalog button" href="#">
             Быстрый просмотр
           </a>
         </li>
@@ -533,7 +533,7 @@
   </div>
   </main>
   <footer class="page-footer container">
-    <div class="page-footer__wrraper">
+    <div class="page-footer__wrraper page-footer__wrraper--catalog">
       <section class="social">
       <ul class="social__list">
         <li class="social__item">
@@ -602,7 +602,7 @@
       <section class="copyright">
       <img src="img/logo-htmlacademy.svg" width="108" height="38" alt="Логотип Htmlacademy">
       <p class="copyright__text">
-        Сделано в <a href="https://htmlacademy.ru">HTML academy</a> &copy; 2017
+        Сделано в <a href="https://htmlacademy.ru">HTML academy</a> &copy; 2019
       </p>
       </section>
     </div>

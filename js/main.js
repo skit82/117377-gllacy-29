@@ -36,3 +36,42 @@ function init () {
   myMap.geoObjects.add(myPlacemark);
 }
 ymaps.ready(init);
+
+feedbackLink = document.querySelector(".address__btn")
+popupOverlay = document.querySelector(".overlay")
+popupClose = popupOverlay.querySelector(".modal__close-btn")
+feedbackForm = popupOverlay.querySelector(".modal__form")
+feedbackName = feedbackForm.querySelector("[name=feedback-name]")
+feedbackEmail = feedbackForm.querySelector("[name=feedback-email]")
+feedbackMessage = feedbackForm.querySelector("[name=feedback-message]");
+
+feedbackLink.addEventListener("click", function(e) {
+    e.preventDefault(),
+    popupOverlay.classList.add("overlay-show"),
+    feedbackName.focus()
+})
+
+popupClose.addEventListener("click", function(e) {
+    e.preventDefault(),
+    popupOverlay.classList.remove("overlay-show"),
+    feedbackName.classList.remove("modal-invalid"),
+    feedbackEmail.classList.remove("modal-invalid"),
+    feedbackMessage.classList.remove("modal-invalid")
+})
+
+feedbackForm.addEventListener("submit", function(e) {
+    feedbackName.value ? feedbackName.classList.remove("modal-invalid") : (e.preventDefault(),
+    feedbackName.classList.add("modal-invalid")),
+    feedbackEmail.value ? feedbackEmail.classList.remove("modal-invalid") : (e.preventDefault(),
+    feedbackEmail.classList.add("modal-invalid")),
+    feedbackMessage.value ? feedbackMessage.classList.remove("modal-invalid") : (e.preventDefault(),
+    feedbackMessage.classList.add("modal-invalid"))
+})
+
+window.addEventListener("keydown", function(e) {
+    27 === e.keyCode && (e.preventDefault(),
+    popupOverlay.classList.contains("overlay-show") && (popupOverlay.classList.remove("overlay-show"),
+    feedbackName.classList.remove("modal-invalid"),
+    feedbackEmail.classList.remove("modal-invalid"),
+    feedbackMessage.classList.remove("modal-invalid")))
+});

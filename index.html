@@ -21,7 +21,7 @@
             </a>
             <ul class="subsection-catalog">
               <li class="subsection-catalog__item">
-                <a class="subsection-catalog__link subsection-catalog__link--novelty" href="#">
+                <a class="subsection-catalog__link subsection-catalog__link--novelty" href="">
                   Новинки
                 </a>
               </li>
@@ -251,7 +251,7 @@
       </section>
       <section class="promo">
       <h2 class="promo__title">
-        Магазин Глейси  -  это онлайн и офлайн магазин по продаже мороженого собственного производства на разнавес
+        Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
       </h2>
       <ul class="promo__list">
         <li class="promo__item promo__item--ice">
@@ -405,11 +405,33 @@
       <section class="copyright">
       <img src="img/logo-htmlacademy.svg" width="108" height="38" alt="Логотип Htmlacademy">
       <p class="copyright__text">
-        Сделано в <a href="https://htmlacademy.ru">HTML academy</a> &copy; 2017
+        Сделано в <a class="copyright__link" href="https://htmlacademy.ru">HTML academy</a> &copy; 2019
       </p>
       </section>
     </div>
   </footer>
+  <div class="overlay modal">
+      <section class="modal__box">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <button class="modal__close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <p class="modal__text">Мы обязательно вам ответим!</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal__descr-group">
+            <input class="modal__input" type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия">
+            <label class="visually-hidden" for="feedback-name-field">Имя Фамилия</label>
+          </p>
+          <p class="modal__descr-group">
+            <input class="modal__input" type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com">
+            <label class="visually-hidden" for="feedback-email-field">email@example.com</label>
+          </p>
+          <p class="modal__descr-group">
+            <textarea class="modal__textarea" name="feedback-message" id="feedback-message-field" cols="45" rows="15" placeholder="В свободной форме"></textarea>
+            <label class="visually-hidden" for="feedback-message-field">В свободной форме</label>
+          </p>
+          <button class="button modal__btn" type="submit">Отправить</button>
+        </form>
+      </section>
+    </div>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=18fa3143-a194-4ef7-b5b3-2f538382dcf3&lang=ru_RU"></script>
   <script src="js/main.js"></script>
 </body>
