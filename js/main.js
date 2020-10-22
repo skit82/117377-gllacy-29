@@ -17,7 +17,9 @@ var changeActiveSlide = function() {
   document.body.style.backgroundColor = backgroundColors[currentColor]
 }
 
+var mapImage = document.querySelector(".address__img");
 function init () {
+  mapImage.classList.add("map-hide");
   var myMap = new ymaps.Map('map', {
     center: [59.939228, 30.329364],
     zoom: 16
