@@ -168,11 +168,21 @@ body {
 }
 .main-nav__link {
   display: block;
+  position: relative;
   margin-right: 5px;
   padding: 0px 14px;
   padding-bottom: 8px;
   padding-top: 6px;
   border-radius: 16px;
+}
+.main-nav__link:not(.main-nav__link--current)::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  right: 14px;
+  width: calc(100% - 29px);
+  height: 1px;
+  background-color: var(--basic-bg-white);
 }
 .main-nav__list,
 .subsection-catalog,
@@ -572,7 +582,7 @@ body {
 }
 .cart-form__modal-delete {
   display: block;
-  width: 11px;
+  /*width: 11px;*/
   height: 11px;
   font-size: 0;
   border: 0;
@@ -1046,9 +1056,9 @@ body {
   -ms-grid-columns: 1fr 26px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 14px;
-  -webkit-column-gap: 26px;
-  -moz-column-gap: 26px;
-  column-gap: 26px;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
   list-style: none;
   padding: 0px;
   /*padding-left: 20px;*/
@@ -1066,7 +1076,7 @@ body {
   content: "";
   width: 49px;
   height: 49px;
-  background-image: url(../img/ice-cream.png);
+  background-image: url(../img/ice-cream.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1074,7 +1084,7 @@ body {
   content: "";
   width: 49px;
   height: 49px;
-  background: url(../img/eco.png);
+  background: url(../img/eco.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1082,7 +1092,7 @@ body {
   content: "";
   width: 49px;
   height: 49px;
-  background-image: url(../img/thermometer.png);
+  background-image: url(../img/thermometer.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1090,7 +1100,7 @@ body {
   content: "";
   width: 49px;
   height: 49px;
-  background: url(../img/cow.png);
+  background: url(../img/cow.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1490,7 +1500,17 @@ body {
   line-height: 16px;
   color: var(--basic-white);
 }
-.breadcrumbs__current {
+.breadcrumbs__link--line {
+  color: var(--basic-white);
+  border-bottom: 1px solid var(--basic-bg-white);
+}
+.breadcrumbs__link--line:focus,
+.breadcrumbs__link--line:hover,
+.breadcrumbs__link--line:active {
+  color: var(--basic-light-coral);
+  border-bottom: 1px solid var(--basic-bd-coral);
+}
+.breadcrumbs__link--current {
   padding: 0px;
   margin: 0px;
   font-weight: 400;
@@ -1520,7 +1540,7 @@ body {
 }
 .page__title {
   margin: 0px;
-  margin-top: 2px;
+  margin-top: 1px;
   margin-bottom: 27px;
   font-weight: 700;
   font-size: 35px;
@@ -1676,29 +1696,41 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 425px;
-  height: 36px;
+  height: 22px;
+  padding: 7px 0px;
   background: var(--basic-bg-white);
   border-radius: 20px;
 }
 .fat__inner label {
   position: relative;
   margin-top: 4px;
-  margin-left: 50px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   cursor: pointer;
+}
+.fat__item--zero {
+  padding-left: 47px;
+  margin-right: 5px;
+}
+.fat__item--ten {
+  padding-left: 47px;
+  margin-right: 6px;
+}
+.fat__item--thirty {
+  padding-left: 46px;
+  margin-right: 5px;
+}
+.fat__item--above {
+  padding-left: 47px;
 }
 .fat__inner .fat__off,
 .fat__inner .fat__on {
   position: absolute;
   width: 21px;
   height: 21px;
-  left: -34px;
+  left: 14px;
   top: -2px;
   opacity: 0;
 }
@@ -1737,19 +1769,23 @@ body {
   color: var(--basic-white);
 }
 .filler__cocoa {
-  margin-left: 47px
+  padding-left: 47px;
+  margin-right: 5px;
 }
 .filler__sugar {
-  margin-left: 53px;
+  padding-left: 49px;
+  margin-right: 6px;
 }
 .filler__fruit {
-  margin-left: 56px;
+  padding-left: 51px;
+  margin-right: 7px;
 }
 .filler__syrups {
-  margin-left: 58px;
+  padding-left: 49px;
+  margin-right: 4px;
 }
 .filler__jams {
-  margin-left: 54px;
+  padding-left: 51px;
 }
 .filler__inner .filler__on {
   width: 23px;
@@ -1758,7 +1794,7 @@ body {
 .filler__inner .filler__on {
   position: absolute;
   height: 25px;
-  left: -32px;
+  left: 16px;
   bottom: -2px;
   opacity: 0;
 }
