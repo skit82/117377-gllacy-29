@@ -32,6 +32,7 @@
   --basic-purple: #ac1000;
   --basic-dark-red: #942718;
   --basic-grey-green: #849d8f;
+  --basic-blue: #92cdff;
 
   --basic-sw-dull-grey: #696969;
   --basic-shadow-purple: rgba(172, 16, 0, 0.64);
@@ -178,7 +179,7 @@ body {
 .main-nav__link:not(.main-nav__link--current)::after {
   content: "";
   position: absolute;
-  bottom: 7px;
+  bottom: 6px;
   right: 14px;
   width: calc(100% - 29px);
   height: 1px;
@@ -1139,6 +1140,7 @@ body {
   padding: 19px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: var(--basic-white);
   background-image: url(../img/bg-strawberry.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -1157,7 +1159,7 @@ body {
   width: 282px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   color: var(--basic-ford-dark);
 }
 .blog__link span {
@@ -1176,6 +1178,7 @@ body {
 
 .message {
   width: 560px;
+  background-color: var(--basic-blue);
   background-image: url(../img/bg-post.jpg);
   /*background-repeat: repeat-y;*/
   border-radius: 15px;
@@ -1325,10 +1328,16 @@ body {
   margin-bottom: 27px;
   width: 175px;
 }
-.adress__name {
+.adress__name  {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-ford-dark);
+}
+.adress__link {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
