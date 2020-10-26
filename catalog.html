@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Каталог Глейси</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
   <div class="container">
@@ -122,13 +122,13 @@
                 </td>
                 <td class="cart-form__image-next"><img src="img/cart-cranberries.jpg" width="33" height="33" alt="Клубничный пломбир"></td>
                 <td class="cart-form__article cart-form__article--next">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td class="cart-form__value">1,5</td>
-                <td class="cart-form__dimension">кг</td>
-                <td class="cart-form__operator">х</td>
-                <td class="cart-form__cost">300</td>
-                <td class="cart-form__ruble">руб.</td>
-                <td class="cart-form__result">450</td>
-                <td class="cart-form__summ">руб.</td>
+                <td class="cart-form__value cart-form__value--next">1,5</td>
+                <td class="cart-form__dimension cart-form__dimension--next">кг</td>
+                <td class="cart-form__operator cart-form__operator--next">х</td>
+                <td class="cart-form__cost cart-form__cost--next">300</td>
+                <td class="cart-form__ruble cart-form__ruble--next">руб.</td>
+                <td class="cart-form__result cart-form__result--next">450</td>
+                <td class="cart-form__summ cart-form__summ--next">руб.</td>
               </tr>
             </table>
             <p class="cart-form__total">Итого: <span>750</span> руб.</p>
@@ -182,7 +182,8 @@
       <form class="filter__box form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__fieldset sorting">
           <legend class="sorting__name">Сортировка</legend>
-          <select class="sorting__select" name="soft">
+          <label class="visually-hidden" for="id_select">Список</label>
+          <select id="id_select" class="sorting__select" name="soft">
             <option value="по популярности">по популярности</option>
             <option value="сначало недорогие">сначало недорогие</option>
             <option value="сначало дорогие">сначало дорогие</option>
@@ -514,7 +515,7 @@
       </h2>
       <ul class="pagination__list">
         <li class="pagination__item prev">
-          <p class="prev__icon"></p>
+          <p arial-label="Текущая страница" class="prev__icon"></p>
         </li>
         <li class="pagination__item-active">
           <button>1</button>
@@ -532,7 +533,7 @@
           <button>5</button>
         </li>
         <li class="pagination__item next">
-          <a href="" class="next__icon"></a>
+          <a arial-label="Следующая страница" href="" class="next__icon"></a>
         </li>
       </ul>
     </section>
